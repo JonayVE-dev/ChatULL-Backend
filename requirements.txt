@@ -1,0 +1,9 @@
+openai
+python-dotenv
+Flask
+Flask-Cors
+PyPDF2
+cryptography
+requests
+beautifulsoup4
+gunicorn
