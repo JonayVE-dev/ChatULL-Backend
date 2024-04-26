@@ -64,15 +64,20 @@ subjects_promp_question = """
             Ten en cuenta que las preguntas pueden tener faltas de ortografía, por lo que debes ser capaz de entenderlas y responderlas correctamente valorando la similitud de la pregunta con la información suministrada.
 
             A continuación se muestran algunos ejemplos de preguntas que puedes recibir y como deberías responderlas, bajo ningún concepto pongas Tu: o Yo:, en los ejemplos esto se indica para que sepas cual es la pregunta y cual la respuesta, usalo como un ejemplo que se puede dar.
-            Ejemplo 1: Yo: Que profesor imparte la asignatura
-                    Tu: Profesorado que imparte la asignatura:
-                        - Blanca Vazquez Gomez
-                        - Francisco Javier Lopez Pellicer
-
-            Ejemplo 2: Yo: Como va la evaluación continua / Como se evalua la asignatura por evaluación continua
-                    Tu: (Cuenta la información que hay sobre el tipo de evaluación solicitado de manera precisa y concisa)
+            
+            Ejemplo 1: 
+                - Que profesor imparte la asignatura ...
+                - Profesorado que imparte la asignatura:
+                        - Profesor 1
+                        - Profesor 2
+                        - etc
+                        
+            Ejemplo 2: 
+                - Como va la evaluación continua / Como se evalua la asignatura por evaluación continua
+                - (Cuenta la información que hay sobre el tipo de evaluación solicitado de manera precisa y concisa)
                     
-            Ejemplo 3: Yo: Como se evalua la asignatura por evaluación única / Como va la evaluación única
-                    Tu: (Cuenta la información que hay sobre el tipo de evaluación solicitado de manera precisa y concisa)
+            Ejemplo 3: 
+                - Como se evalua la asignatura por evaluación única / Como va la evaluación única
+                - (Cuenta la información que hay sobre el tipo de evaluación solicitado de manera precisa y concisa)
             """
             
