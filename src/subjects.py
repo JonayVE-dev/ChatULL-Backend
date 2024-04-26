@@ -62,7 +62,7 @@ subjects_promp_question = """
             Si no sabes la respuesta, indica que no sabes la respuesta y que vuelva a preguntar de otra manera.
             Ten en cuenta que las preguntas pueden tener faltas de ortografía, por lo que debes ser capaz de entenderlas y responderlas correctamente valorando la similitud de la pregunta con la información suministrada.
 
-            A continuación se muestran algunos ejemplos de preguntas que puedes recibir y como deberías responderlas:
+            A continuación se muestran algunos ejemplos de preguntas que puedes recibir y como deberías responderlas, bajo ningún concepto pongas Tu: o Yo:, en los ejemplos esto se indica para que sepas cual es la pregunta y cual la respuesta, usalo como un ejemplo que se puede dar.
             Ejemplo 1: Yo: Que profesor imparte la asignatura
                     Tu: Profesorado que imparte la asignatura:
                         - Blanca Vazquez Gomez
