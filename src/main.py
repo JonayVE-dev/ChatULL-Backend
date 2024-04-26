@@ -62,7 +62,7 @@ def get_answer(api_key):
     if not docs_page_content:
         return jsonify({'error': 'Materia no encontrada'}), 404
     
-    answer, duration = answer_question(question, docs_page_content, subjects_promp_classify, subjects_promp_question, subjects_description, api_key)
+    answer, duration = answer_question(question, docs_page_content, subjects_promp_classify, subjects_promp_question, subjects_description, api_key, subject)
     answer = answer.replace("\n", "<br>")
     save_time_to_csv(question, answer, duration)
     return jsonify({"answer": answer})
@@ -79,7 +79,7 @@ def get_regulation_answer(api_key):
     if not regulation_page_content:
         return jsonify({'error': 'Regulación no encontrada'}), 404
     
-    answer, duration = answer_question(question, regulation_page_content, regulation_promp_classify, regulation_promp_question, regulation_description, api_key)
+    answer, duration = answer_question(question, regulation_page_content, regulation_promp_classify, regulation_promp_question, regulation_description, api_key, regulation_name)
     answer = answer.replace("\n", "<br>")
     save_time_to_csv(question, answer, duration)
     return jsonify({"answer": answer})

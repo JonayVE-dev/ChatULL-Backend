@@ -34,6 +34,7 @@ regulation_promp_question = """
 
             La información actual es la siguiente:
 
+            La siguiente información es referente a la normativa de la universidad con nombre {document_name}:
             {section_content}
 
             Pregunta: {question}

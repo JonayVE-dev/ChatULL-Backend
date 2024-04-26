@@ -3,7 +3,7 @@ from openai import OpenAI
 import re
 import time
 
-def answer_question(question, docs_page_content, classify_model, question_model, classify_description, api_key):
+def answer_question(question, docs_page_content, classify_model, question_model, classify_description, api_key, document_name):
     client = OpenAI(api_key=api_key)
 
     start_time = time.time()
@@ -34,7 +34,7 @@ def answer_question(question, docs_page_content, classify_model, question_model,
     completion = client.chat.completions.create(
         model="gpt-3.5-turbo",
         messages=[
-            {"role": "user", "content": question_model.format(question=question, section_content=section_content)},
+            {"role": "user", "content": question_model.format(document_name=document_name, question=question, section_content=section_content)},
         ]
     )
     response = completion.choices[0].message.content

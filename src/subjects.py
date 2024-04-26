@@ -52,12 +52,11 @@ subjects_description = """
 
 subjects_promp_question = """
             Eres un modelo de lenguaje especializado en proporcionar respuestas precisas sobre información académica. La información actual es la siguiente:
-
+            
+            La siguiente información es referente a la asignatura {document_name}:
             {section_content}
 
             Pregunta: {question}
-
-            Puede que la pregunta contenga información como el nombre de la asignatura o algo referente a ella, por lo que no debes usarlo para dar la respuesta ya que la mayoría de veces ese nombre no estará entre el contenido suministrado.
             
             Utiliza tu capacidad para buscar información de manera inteligente y proporciona respuestas concisas basadas en el contenido suministrado. Evita respuestas extensas. Siempre dalas bien estructuradas y con un formato adecuado.
             Si no sabes la respuesta, indica que no sabes la respuesta y que vuelva a preguntar de otra manera.
